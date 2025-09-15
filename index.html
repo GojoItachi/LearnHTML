@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azizbek — портфолио</title>
+
+  <!-- Google Font (можешь поменять на любую) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- подключаем внешний CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <div class="logo">Azizbek</div>
+      <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Заставка -->
+  <section id="home" class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">
+        Привет — я <span class="accent">Azizbek</span>, <span id="type"></span>
+      </h1>
+      <p class="hero__subtitle">Учусь веб-разработке и строю путь к финансовой свободе.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#projects">Мои проекты</a>
+        <a class="btn btn--ghost" href="#about">Узнать больше</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- О себе -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section__title">Обо мне</h2>
+      <p class="lead">Я быстро учусь, дисциплинирован и фокусируюсь на результатах. Мечтаю стать профессионалом в веб и запустить собственный бизнес.</p>
+    </div>
+  </section>
+
+  <!-- Проекты / карточки -->
+  <section id="projects" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Проекты</h2>
+
+      <div class="grid" id="projectsGrid">
+        <!-- карточки (можешь копировать / добавлять свои) -->
+        <article class="card" data-reveal>
+          <h3>Лендинг-страница</h3>
+          <p>Простой адаптивный лендинг, HTML + CSS. Быстрый старт для портфолио.</p>
+          <a class="link" href="#">Смотреть</a>
+        </article>
+
+        <article class="card" data-reveal>
+          <h3>Портфолио</h3>
+          <p>Набор мини-проектов: страницу «О себе», форму, галерею.</p>
+          <a class="link" href="#">Смотреть</a>
+        </article>
+
+        <article class="card" data-reveal>
+          <h3>Интерактив</h3>
+          <p>Мини-игра / скрипты на JavaScript для практики DOM и логики.</p>
+          <a class="link" href="#">Смотреть</a>
+        </article>
+        <article class="card" data-reveal> 
+          <h3>Работа с базами данных</h3>
+          <p>Умение работать с SQL и NoSQL базами данных.</p>
+          <a class="link" href="#">Смотреть</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section__title">Контакты</h2>
+      <p>Почта: <a href="mailto:azik.rich.1998@gmail.com">azik.rich.1998@gmail.com</a></p>
+      <p>Telegram: <a href="https://t.me/Blackmeteorite2">Blackmeteorite2</a></p>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Azizbek — сделано с практикой и терпением.</p>
+    </div>
+  </footer>
+
+  <!-- подключаем JS (defer чтобы скрипт грузился после HTML) -->
+  <script src="script.js" defer></script>
+</body>
+</html>
